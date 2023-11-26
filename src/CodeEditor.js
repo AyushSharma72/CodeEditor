@@ -119,7 +119,7 @@ function CodeEditor() {
             <div className="ContainersParent">
                 <div className="LeftContainer">
                     <button className="Runbutton " onClick={Compile}>Run</button>
-                    <Editor
+                    <Editor   className="Editor"
                         value={UserCode} // to change templete when language  changes update value prop
                         onChange={(value) => SetUserCode(value)}
                         options={options}
