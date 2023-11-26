@@ -119,3 +119,44 @@ button:hover{
 button:active{
    transform: scale(0.97);
 }
+
+
+@media screen and (max-width:426px){
+  .NavbarPart1 {
+    width:100%;
+    justify-content: space-between;
+    padding:1rem;
+  }
+  .CompilerHeading{
+    display:none;
+  }
+  .ContainersParent{
+    margin-top:5.7rem;
+    flex-direction: column;
+  }
+  .LeftContainer {
+   width:100%;
+   height: 50vh;
+  }
+  .LeftContainer .Editor{
+    height:50vh;
+}
+.RightContainer {
+  width: 100%;
+ }
+
+ .Runbutton {
+  position: absolute;
+  top: 58%;
+  right:5%;
+  z-index: 4;
+}
+.ClearButton{
+  position: absolute;
+  bottom:9%;
+  right:5%;
+  z-index: 4;
+}
+
+
+}
