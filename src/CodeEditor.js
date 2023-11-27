@@ -102,7 +102,7 @@ function CodeEditor() {
         <div>
             <div className="Navbar">
                 <div className="NavbarPart1">
-                    <h1 style={{ fontWeight: "700" }}>Online Code Compiler</h1>
+                    <h1 style={{ fontWeight: "700" }} className="CompilerHeading">Online Code Compiler</h1>
                     <Select options={languages} value={Language} onChange={(e) => { SetLanguage(e.value) }} placeholder={Language} className="Select"></Select>
                     <Select options={Theme} value={DefaultTheme} onChange={(e) => { SetDefaultTheme(e.value) }} placeholder={DefaultTheme} className="Select"></Select>
                     <div className="FontSizeDiv">
@@ -119,7 +119,7 @@ function CodeEditor() {
             <div className="ContainersParent">
                 <div className="LeftContainer">
                     <button className="Runbutton " onClick={Compile}>Run</button>
-                    <Editor   className="Editor"
+                    <Editor className="Editor"
                         value={UserCode} // to change templete when language  changes update value prop
                         onChange={(value) => SetUserCode(value)}
                         options={options}
