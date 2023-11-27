@@ -107,7 +107,7 @@ function CodeEditor() {
                     <Select options={Theme} value={DefaultTheme} onChange={(e) => { SetDefaultTheme(e.value) }} placeholder={DefaultTheme} className="Select"></Select>
                     <div className="FontSizeDiv">
                         <label style={{ fontWeight: "700" }}>Font Size</label>
-                        <input type="range" min="18" max="30"
+                        <input type="range" min="10" max="30"
                             value={FontSize} step="2" style={{ cursor: "pointer" }}
                             onChange={(e) => { SetFontSize(e.target.value) }} />
                     </div>
